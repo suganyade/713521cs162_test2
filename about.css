@@ -1,0 +1,185 @@
+/* Reset some default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: white;
+    /* Light background color */
+    color:black;
+    /* Dark text color */
+    line-height: 1.6;
+    /* Improved line height for readability */
+}
+
+header {
+    background: #e7c6ff;
+    /* Header background color */
+    color: white;
+    /* Header text color */
+    padding: 20px 0;
+    /* Padding for header */
+    text-align: center;
+    /* Centered text */
+}
+
+nav ul {
+    list-style: none;
+    /* Remove bullet points */
+    padding: 0;
+    /* Remove padding */
+}
+
+nav ul li {
+    display: inline;
+    /* Display links inline */
+    margin: 0 15px;
+    /* Margin between links */
+}
+
+nav ul li a {
+    color: white;
+    /* Link color */
+    text-decoration: none;
+    /* Remove underline */
+    transition: color 0.3s ease, transform 0.3s ease;
+    /* Transition for link color and scale */
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+    /* Change color on hover */
+    transform: scale(1.1);
+    /* Slightly enlarge the link */
+}
+
+main {
+    padding: 20px;
+    /* Padding for main content */
+    max-width: 900px;
+    /* Max width for main content */
+    margin: auto;
+    /* Center the main content */
+}
+
+section {
+    background:rgb(250, 247, 247);
+    /* Section background color */
+    border-radius: 10px;
+    /* Rounded corners */
+    padding: 20px;
+    /* Padding for sections */
+    margin: 20px 0;
+    /* Margin between sections */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    /* Shadow for depth */
+    
+            opacity: 1 ;
+            transform: translateY(0) ;
+        
+    /* Start slightly below */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    /* Transition for fade and slide */
+}
+
+section.visible {
+    opacity: 1;
+    /* Fully visible */
+    transform: translateY(0);
+    /* Move to original position */
+}
+
+h1 {
+    margin-bottom: 10px;
+    /* Margin below main heading */
+    font-size: 2.5em;
+    /* Font size for main heading */
+}
+
+h2 {
+    color: #e7c6ff;
+    /* Color for section headings */
+    margin-bottom: 10px;
+    /* Margin below section headings */
+    position: relative;
+    /* Position for pseudo-element */
+}
+
+h2::after {
+    content: '';
+    /* Pseudo-element for decorative line */
+    display: block;
+    /* Block display */
+    width: 50px;
+    /* Width of the line */
+    height: 4px;
+    /* Height of the line */
+    background: #e7c6ff;
+    /* Color of the line */
+    margin-top: 5px;
+    /* Margin above the line */
+}
+
+footer {
+    text-align: center;
+    /* Centered text */
+    padding: 10px 0;
+    /* Padding for footer */
+    background: #e7c6ff;
+    /* Dark background for footer */
+    color: rgb(35, 32, 32);
+    /* White text color */
+    position: relative;
+    /* Positioning for footer */
+    bottom: 0;
+    /* Align to bottom */
+    width: 100%;
+    /* Full width */
+}
+
+/* Add transitions for list items */
+ul li {
+    transition: background-color 0.3s ease;
+    /* Transition for background color */
+}
+
+ul li:hover {
+    background-color: #f0f0f0;
+    /* Change background on hover */
+    padding-left: 10px;
+    /* Slightly shift the item on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        /* Stack links vertically on small screens */
+        margin: 10px 0;
+        /* Margin for vertical spacing */
+    }
+
+    main {
+        padding: 10px;
+        /* Reduced padding for small screens */
+    }
+}
+@media (max-width: 900px) {
+    nav ul li {
+        display: block;
+        /* Stack links vertically on medium screens */
+        margin: 10px 0;
+        /* Margin for vertical spacing */
+    }
+
+    main {
+        padding: 15px;
+        /* Reduced padding for medium screens */
+    }
+
+    h1 {
+        font-size: 2em;
+    }

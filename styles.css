@@ -1,0 +1,177 @@
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #e7c6ff;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+.courses-container {
+    display: flex;
+    flex-wrap: wrap;
+     justify-content: space-between;
+    margin: 10px 0;
+ 
+}
+
+.course {
+    background:#ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+   text-align: center;
+    width: 400px;
+
+}
+ .name{
+     color: #333;
+     transition: text-shadow 0.3s ease;
+    
+ }
+
+ .name:hover {
+     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    
+ }
+img:hover {
+    opacity: 0.8;
+  
+    transform: scale(1.05);
+  
+}
+img {
+    display: block;
+    margin: 0 auto;
+  
+}
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background:#e7c6ff;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+ 
+}
+
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background: #e7c6ff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background:#e7c6ff;
+}
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;  
+        margin: 10px 0;
+    }
+
+    .courses-container {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .course {
+        width: 90%;
+
+    }
+
+    main {
+        padding: 15px;
+        
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8em;
+  
+    }
+
+    .course {
+        width: 100%;
+       
+        margin: 5px 0;
+        
+    }
+
+    form {
+        padding: 15px;
+     
+    }
+
+    form button {
+        width: 100%;
+      
+    }
+}
+}

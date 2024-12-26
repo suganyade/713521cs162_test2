@@ -1,0 +1,146 @@
+/* Reset some default styles */
+body,
+h1,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic body styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+
+    /* Replace with your GIF URL */
+    background-image: url('https: //i.pinimg.com/736x/07/67/4c/07674c99a023f8ea34a81fe1c671e983.jpg');
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background: #e7c6ff;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+select {
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Course list styles */
+#courseList {
+    list-style: none;
+}
+
+#courseList li {
+    background: #e9ecef;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #e7c6ff;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        /* Stack links vertically on small screens */
+        margin: 10px 0;
+        /* Margin for vertical spacing */
+    }
+
+    main {
+        padding: 15px;
+        /* Reduced padding for small screens */
+    }
+
+    header h1 {
+        font-size: 1.8em;
+        /* Smaller font size for header */
+    }
+
+    h1 {
+        font-size: 2em;
+        /* Smaller font size for main heading */
+    }
+}
+
+@media (max-width: 400px) {
+    main {
+        padding: 10px;
+        /* Further reduced padding for very small screens */
+    }
+
+    header h1 {
+        font-size: 1.5em;
+        /* Even smaller font size for header */
+    }
+
+    h1 {
+        font-size: 1.8em;
+        /* Even smaller font size for main heading */
+    }
+
+    nav ul li {
+        margin: 5px 0;
+        /* Reduced margin for links */
+    }
+}
